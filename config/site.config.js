@@ -4,13 +4,15 @@
  */
 module.exports = {
   // [OPTIONAL] This is the website icon to the left of the title inside the navigation bar.
+  userPrincipalName: process.env.USER_PRINCIPLE_NAME || 'chanfeng@hnpec.onmicrosoft.com',
+
   // It should be placed under the /public directory of your GitHub project (not your OneDrive folder!), and referenced here by its relative path to /public.
   // Now you can use FontAwesomeIcon as the logo (it can follow the system's day/night mode to change color), 
   // and the writing format is 'iconPrefix-iconName', e.g. icon: 'fab-github',
   // If the FontAwesomIcon you choose does not display properly, you may need to import it in `src/pages/_app.tsx`.
   // However, the browser's tab bar icon is STILL determined by /public/favicon.ico
   icon: 'fas-cube', // or icon: '/icons/128.png', to use a image.
-
+  
   // Prefix for KV Storage.
   // You can put this in Vercel's environment variable 'KV_PREFIX' without any modification here.
   kvPrefix: process.env.KV_PREFIX || '',
