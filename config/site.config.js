@@ -20,12 +20,13 @@ module.exports = {
   // The name of your website. Present alongside your icon.
   // You can put this in Vercel's environment variable 'NEXT_PUBLIC_SITE_TITLE' without any modification here.
   title: process.env.NEXT_PUBLIC_SITE_TITLE || 'OneDrive-Index',
+  baseDirectory: process.env.BASE_DIRECTORY || '/public',
 
   // [OPTIONAL] This is where you specify the folders that are password protected.
   // It is an array of paths pointing to all the directories in which you have .password set. Check the documentation for details.
   // You can put this in Vercel's environment variable 'NEXT_PUBLIC_PROTECTED_ROUTES' without any modification here.
   protectedRoutes: process.env.NEXT_PUBLIC_PROTECTED_ROUTES ? process.env.NEXT_PUBLIC_PROTECTED_ROUTES.split(',') : [],
-
+  
   // [OPTIONAL] If you want to display the email used to contact you on the right side of the nav bar, 
   // you can set it in Vercel's environment variable 'NEXT_PUBLIC_EMAIL' without any modification here.
   email: process.env.NEXT_PUBLIC_EMAIL ? `mailto:${process.env.NEXT_PUBLIC_EMAIL}` : '',
