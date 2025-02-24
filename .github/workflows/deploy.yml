@@ -37,7 +37,7 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "wuhunfeng-onedrive-in-95"
+          project: "wuhunfeng-onedrive-in-11"
           entrypoint: "jsr:@deno/nextjs-start"
           root: "."
           include: .next, public
